@@ -1,6 +1,6 @@
 %define		_name CursorCraft
-Summary:	A cursor theme based on cursors from Starcraft game.
-Summary(pl):	Motyw kursorów oparty na kursorach z gry Starcraft.
+Summary:	A cursor theme based on cursors from Starcraft game
+Summary(pl):	Motyw kursorów oparty na kursorach z gry Starcraft
 Name:		XcursorTheme-%{_name}
 Version:	0.2
 Release:	1
@@ -10,8 +10,8 @@ Source0:	http://www.kde-look.org/content/files/5377-%{_name}-%{version}.tar.bz2
 # Source0-md5:	20eb545c823ce14bf9b85eb755543b0e
 URL:		http://www.kde-look.org/content/show.php?content=5377
 BuildRequires:	XFree86 >= 4.3
-Buildarch:	noarch
 Requires:	XFree86 >= 4.3
+BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
@@ -30,9 +30,8 @@ chmod +x ./build.sh
 
 %install
 rm -rf $RPM_BUILD_ROOT
-# create directories if necessary
 install -d $RPM_BUILD_ROOT%{_iconsdir}/%{_name}/cursors
-cp -df ./cursors/*  $RPM_BUILD_ROOT%{_iconsdir}/%{_name}/cursors/
+cp -df ./cursors/*  $RPM_BUILD_ROOT%{_iconsdir}/%{_name}/cursors
 
 echo "[Icon Theme]" > $RPM_BUILD_ROOT%{_iconsdir}/%{_name}/index.theme
 echo "Name = CursorCraft" >> $RPM_BUILD_ROOT%{_iconsdir}/%{_name}/index.theme
