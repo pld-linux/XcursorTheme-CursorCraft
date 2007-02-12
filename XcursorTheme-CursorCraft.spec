@@ -1,6 +1,6 @@
 %define		_name CursorCraft
 Summary:	A cursor theme based on cursors from Starcraft game
-Summary(pl.UTF-8):   Motyw kursorów oparty na kursorach z gry Starcraft
+Summary(pl.UTF-8):	Motyw kursorów oparty na kursorach z gry Starcraft
 Name:		XcursorTheme-%{_name}
 Version:	0.2
 Release:	1
